@@ -1,0 +1,286 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1792309457843,
+      "tag": "0000_core_people_registry",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1792327541575,
+      "tag": "0001_guide_arrival_tourism",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1792330862387,
+      "tag": "0002_me_pass_connections",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1792332285943,
+      "tag": "0003_network_directory",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1792332362395,
+      "tag": "0004_person_id_for_code",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1792345449131,
+      "tag": "0005_onboarding_role_claims",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1792421209530,
+      "tag": "0006_volunteer_roles_enum",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1792421247890,
+      "tag": "0007_console_v2_ops",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1792421260612,
+      "tag": "0008_decks_storage_policies",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1792424103997,
+      "tag": "0009_schedule_alerts_handshake",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1792647546015,
+      "tag": "0010_nfc_cards",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1792649011779,
+      "tag": "0011_people_alt_email_merge",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "7",
+      "when": 1792934297170,
+      "tag": "0012_presenter_sheet_and_programme_scaffold",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "7",
+      "when": 1792999532817,
+      "tag": "0013_network_waves",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "7",
+      "when": 1793901100489,
+      "tag": "0014_final_programme_structure",
+      "breakpoints": true
+    },
+    {
+      "idx": 15,
+      "version": "7",
+      "when": 1793902043252,
+      "tag": "0015_public_papers_view",
+      "breakpoints": true
+    },
+    {
+      "idx": 16,
+      "version": "7",
+      "when": 1793902147665,
+      "tag": "0016_public_papers_standard_institutions",
+      "breakpoints": true
+    },
+    {
+      "idx": 17,
+      "version": "7",
+      "when": 1793903761170,
+      "tag": "0017_calendar_feeds_and_notification_prefs",
+      "breakpoints": true
+    },
+    {
+      "idx": 18,
+      "version": "7",
+      "when": 1793966544679,
+      "tag": "0018_plan_for_all_and_alert_requests",
+      "breakpoints": true
+    },
+    {
+      "idx": 19,
+      "version": "7",
+      "when": 1793992946245,
+      "tag": "0019_schedule_sync_staging",
+      "breakpoints": true
+    },
+    {
+      "idx": 20,
+      "version": "7",
+      "when": 1794126667047,
+      "tag": "0020_profile_links",
+      "breakpoints": true
+    },
+    {
+      "idx": 21,
+      "version": "7",
+      "when": 1794133937733,
+      "tag": "0021_session_moved_baseline",
+      "breakpoints": true
+    },
+    {
+      "idx": 22,
+      "version": "7",
+      "when": 1794141819110,
+      "tag": "0022_merge_signed_in_profiles",
+      "breakpoints": true
+    },
+    {
+      "idx": 23,
+      "version": "7",
+      "when": 1794160293914,
+      "tag": "0023_profile_links_clear_linkedin",
+      "breakpoints": true
+    },
+    {
+      "idx": 24,
+      "version": "7",
+      "when": 1794161096414,
+      "tag": "0024_help_desk_v2",
+      "breakpoints": true
+    },
+    {
+      "idx": 25,
+      "version": "7",
+      "when": 1794316089301,
+      "tag": "0025_detail_change_requests",
+      "breakpoints": true
+    },
+    {
+      "idx": 26,
+      "version": "7",
+      "when": 1794324837043,
+      "tag": "0026_confirm_details_contacts",
+      "breakpoints": true
+    },
+    {
+      "idx": 27,
+      "version": "7",
+      "when": 1794325619636,
+      "tag": "0027_affiliation_detail_requests",
+      "breakpoints": true
+    },
+    {
+      "idx": 28,
+      "version": "7",
+      "when": 1794325648997,
+      "tag": "0028_affiliation_ticket_message",
+      "breakpoints": true
+    },
+    {
+      "idx": 29,
+      "version": "7",
+      "when": 1794325708997,
+      "tag": "0029_paper_author_links",
+      "breakpoints": true
+    },
+    {
+      "idx": 30,
+      "version": "7",
+      "when": 1794375938077,
+      "tag": "0030_track_chairs_from_committee_apply",
+      "breakpoints": true
+    },
+    {
+      "idx": 31,
+      "version": "7",
+      "when": 1794400000000,
+      "tag": "0031_multi_presenters",
+      "breakpoints": true
+    },
+    {
+      "idx": 32,
+      "version": "7",
+      "when": 1794404919689,
+      "tag": "0032_multi_presenters_apply",
+      "breakpoints": true
+    },
+    {
+      "idx": 33,
+      "version": "7",
+      "when": 1794410690774,
+      "tag": "0033_keep_unlinked_presenters_and_cardholders_on_campus",
+      "breakpoints": true
+    },
+    {
+      "idx": 34,
+      "version": "7",
+      "when": 1794419778743,
+      "tag": "0034_save_paper_authors",
+      "breakpoints": true
+    },
+    {
+      "idx": 35,
+      "version": "7",
+      "when": 1794423911237,
+      "tag": "0035_delete_paper",
+      "breakpoints": true
+    },
+    {
+      "idx": 36,
+      "version": "7",
+      "when": 1794549063994,
+      "tag": "0036_save_paper_keep_extra_presenters",
+      "breakpoints": true
+    },
+    {
+      "idx": 37,
+      "version": "7",
+      "when": 1794645904789,
+      "tag": "0037_contact_card_share",
+      "breakpoints": true
+    },
+    {
+      "idx": 38,
+      "version": "7",
+      "when": 1794729819339,
+      "tag": "0038_smart_slotter",
+      "breakpoints": true
+    },
+    {
+      "idx": 39,
+      "version": "7",
+      "when": 1794760151673,
+      "tag": "0039_whatsapp_studio",
+      "breakpoints": true
+    }
+  ]
+}
