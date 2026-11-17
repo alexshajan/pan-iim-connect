@@ -56,6 +56,7 @@ import { Route as GuideExploreRouteImport } from './routes/guide.explore'
 import { Route as IdCodeRouteImport } from './routes/id.$code'
 import { Route as NetworkIndexRouteImport } from './routes/network.index'
 import { Route as NetworkCodeRouteImport } from './routes/network.$code'
+import { Route as NetworkMapRouteImport } from './routes/network.map'
 import { Route as NetworkMetRouteImport } from './routes/network.met'
 import { Route as NetworkPapersRouteImport } from './routes/network.papers'
 import { Route as NetworkPeopleRouteImport } from './routes/network.people'
@@ -304,6 +305,11 @@ const NetworkCodeRoute = NetworkCodeRouteImport.update({
   path: '/$code',
   getParentRoute: () => NetworkRoute,
 } as any)
+const NetworkMapRoute = NetworkMapRouteImport.update({
+  id: '/map',
+  path: '/map',
+  getParentRoute: () => NetworkRoute,
+} as any)
 const NetworkMetRoute = NetworkMetRouteImport.update({
   id: '/met',
   path: '/met',
@@ -412,6 +418,7 @@ export interface FileRoutesByFullPath {
   '/guide/explore': typeof GuideExploreRoute
   '/id/$code': typeof IdCodeRoute
   '/network/$code': typeof NetworkCodeRoute
+  '/network/map': typeof NetworkMapRoute
   '/network/met': typeof NetworkMetRoute
   '/network/papers': typeof NetworkPapersRoute
   '/network/people': typeof NetworkPeopleRoute
@@ -470,6 +477,7 @@ export interface FileRoutesByTo {
   '/guide/explore': typeof GuideExploreRoute
   '/id/$code': typeof IdCodeRoute
   '/network/$code': typeof NetworkCodeRoute
+  '/network/map': typeof NetworkMapRoute
   '/network/met': typeof NetworkMetRoute
   '/network/papers': typeof NetworkPapersRoute
   '/network/people': typeof NetworkPeopleRoute
@@ -532,6 +540,7 @@ export interface FileRoutesById {
   '/guide/explore': typeof GuideExploreRoute
   '/id/$code': typeof IdCodeRoute
   '/network/$code': typeof NetworkCodeRoute
+  '/network/map': typeof NetworkMapRoute
   '/network/met': typeof NetworkMetRoute
   '/network/papers': typeof NetworkPapersRoute
   '/network/people': typeof NetworkPeopleRoute
@@ -595,6 +604,7 @@ export interface FileRouteTypes {
     | '/guide/explore'
     | '/id/$code'
     | '/network/$code'
+    | '/network/map'
     | '/network/met'
     | '/network/papers'
     | '/network/people'
@@ -653,6 +663,7 @@ export interface FileRouteTypes {
     | '/guide/explore'
     | '/id/$code'
     | '/network/$code'
+    | '/network/map'
     | '/network/met'
     | '/network/papers'
     | '/network/people'
@@ -714,6 +725,7 @@ export interface FileRouteTypes {
     | '/guide/explore'
     | '/id/$code'
     | '/network/$code'
+    | '/network/map'
     | '/network/met'
     | '/network/papers'
     | '/network/people'
@@ -1092,6 +1104,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NetworkCodeRouteImport
       parentRoute: typeof NetworkRoute
     }
+    '/network/map': {
+      id: '/network/map'
+      path: '/map'
+      fullPath: '/network/map'
+      preLoaderRoute: typeof NetworkMapRouteImport
+      parentRoute: typeof NetworkRoute
+    }
     '/network/met': {
       id: '/network/met'
       path: '/met'
@@ -1252,6 +1271,7 @@ const GuideRouteWithChildren = GuideRoute._addFileChildren(GuideRouteChildren)
 
 interface NetworkRouteChildren {
   NetworkCodeRoute: typeof NetworkCodeRoute
+  NetworkMapRoute: typeof NetworkMapRoute
   NetworkMetRoute: typeof NetworkMetRoute
   NetworkPapersRoute: typeof NetworkPapersRoute
   NetworkPeopleRoute: typeof NetworkPeopleRoute
@@ -1260,6 +1280,7 @@ interface NetworkRouteChildren {
 
 const NetworkRouteChildren: NetworkRouteChildren = {
   NetworkCodeRoute: NetworkCodeRoute,
+  NetworkMapRoute: NetworkMapRoute,
   NetworkMetRoute: NetworkMetRoute,
   NetworkPapersRoute: NetworkPapersRoute,
   NetworkPeopleRoute: NetworkPeopleRoute,

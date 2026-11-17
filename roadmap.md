@@ -10,6 +10,9 @@
 - [ ] WhatsApp alert delivery (waiting on WhatsApp Business setup)
 - [ ] Network: presence chips ("At the Auditorium now", opt-in) — needs a sharing switch in Me first
 - [ ] Network: shared-element card → profile transition
+- [x] Network home replaces the swipe deck: session-mates, worth meeting (wave/bookmark), map preview, quick actions
+- [x] Network map: constellation by track + overlap view (up to 3 tracks, My network / Everyone listed)
+- [ ] Network: coffee requests with contact shared on accept, visibility scope, block/report (needs DB functions)
 
 ## Later stage (agreed Nov 2026 — tick off in order)
 - [x] Google + Microsoft single sign-on (add next to password/email-code; managed sign-in, no keys needed)

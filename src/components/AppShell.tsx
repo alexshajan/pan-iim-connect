@@ -33,6 +33,7 @@ export function AppShell({
   eyebrow,
   hero,
   wide = false,
+  centered = false,
 }: {
   children: ReactNode;
   title?: string;
@@ -41,6 +42,8 @@ export function AppShell({
   hero?: ReactNode;
   /** Use a wider column on computers (sign-in, two-panel pages). */
   wide?: boolean;
+  /** Centre the page title. */
+  centered?: boolean;
 }) {
   const flags = useModules();
   const { user } = useAuth();
@@ -58,7 +61,7 @@ export function AppShell({
         <>
           <BrandBar left={back} right={right} />
           {title ? (
-            <header className={cn("mx-auto px-5 pt-5", wide ? "max-w-5xl" : "max-w-2xl")}>
+            <header className={cn("mx-auto px-5 pt-5", wide ? "max-w-5xl" : "max-w-2xl", centered && "text-center")}>
               <h1 className="text-display text-[1.9rem] leading-[1.05]">{title}</h1>
             </header>
           ) : null}
